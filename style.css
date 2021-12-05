@@ -1,13 +1,9 @@
 body {
     min-height: 100vh;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-direction: column;
-}
-
-html {
-    height: 100%;
 }
 
 /* General rules for objects on page */
@@ -32,6 +28,9 @@ button {
     background-color: #3882F6;
     color: white;
     border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
 }
 
 #logo{
@@ -40,7 +39,7 @@ button {
     font-weight: bold;
 }
 
-ul#nav-right li{
+ul >li{
     display: inline;
 }
 
@@ -52,16 +51,17 @@ ul#nav-right li{
 
 /* Header and Hero Section */
 
-.container {
+.wrapper {
     background: #1F2937;
-    display: flex;
-    justify-content: center;
+    padding: 2em;
 }
 
-#header{
+.header{
     display: flex;
-    justify-content: space-between;
-    align-items: center
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 #nav-right {
@@ -72,5 +72,18 @@ ul#nav-right li{
 .hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 2em;
+    height: 350px;
 }
+
+#hero-head,
+#hero-text{
+   width: 33%;
+}
+
+/* Information Section */
+
