@@ -19,7 +19,8 @@ a {
 }
 
 #hero-text,
-a {
+a,
+#cta-text {
     font-size: 18px;
     color: #E5E7EB;
 }
@@ -28,12 +29,13 @@ button {
     background-color: #3882F6;
     color: white;
     border-radius: 5px;
-    height: 30px;
-    width: 100px;
+    height: 40px;
+    width: 125px;
     text-align: center;
 }
 
-#logo{
+#logo,
+#cta-head {
     color: #F9FAF8;
     font-size: 24px;
     font-weight: bold;
@@ -145,3 +147,37 @@ h4 {
 
 /* Call to Action Section */
 
+.cta-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.cta {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    width: 1000px;
+    margin: 100px;
+    border-radius: 10px;
+}
+
+#cta-button button {
+    border: 2px solid white;
+}
+
+/*Footer Section */
+
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-text {
+    color: #E5E7EB;
+    margin: 50px;
+}
